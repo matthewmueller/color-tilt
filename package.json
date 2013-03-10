@@ -1,0 +1,9 @@
+{
+  "name" : "baseball",
+  "version" : "0.0.1",
+  "description" : "fun with baseball",
+  "dependencies" : {
+    "express" : "*",
+    "socket.io" : "*"
+  }
+}
