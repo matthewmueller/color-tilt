@@ -45,11 +45,10 @@ es.on('connection', function(socket) {
   sockets.push(socket);
 
   socket.on('message', function(message) {
-
-    // for (var i = 0, len = sockets.length; i < len; i++) {
-    //   if(sockets[i] === this) return;
-    sockets[0].send(message);
-    // };
+    for (var i = 0, len = sockets.length; i < len; i++) {
+      if(sockets[i] === this) return;
+      sockets[i].send(message);
+    };
   })
 });
 
