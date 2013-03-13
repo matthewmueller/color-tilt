@@ -1,10 +1,19 @@
-# Color-tilt experiment
+# color-tilt experiment
 
 Use your iPhone's accelerometer to control the color on your screen.
 
-## Installation and Running Color-tilt
+## Installation
 
-    npm install matthewmueller/color-tilt
+    git clone https://github.com/MatthewMueller/color-tilt.git && cd color-tilt
     make
+
+## Running color-tilt
+
+Using make:
+
     make start
+
+Or with node:
+
+    node app.js
 
