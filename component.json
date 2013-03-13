@@ -1,0 +1,11 @@
+{
+  "name" : "color-tilt",
+  "version" : "0.0.1",
+  "description" : "tilt your phone, change the color",
+  "main" : "color-tilt.js",
+  "scripts" : [ "color-tilt.js" ],
+  "styles" : [ "color-tilt.css" ],
+  "dependencies" : {
+    "learnboost/engine.io-client" : "*"
+  }
+}

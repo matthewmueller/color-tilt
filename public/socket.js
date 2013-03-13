@@ -1,5 +1,5 @@
 
-var socket = io.connect('192.168.2.103:8080');
+var socket = io.connect();
 // window.onload = function() {
 //   socket.emit('coords', {
 //     hi : "hello"

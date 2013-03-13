@@ -1,9 +1,10 @@
 {
-  "name" : "baseball",
+  "name" : "colortilt",
   "version" : "0.0.1",
-  "description" : "fun with baseball",
+  "description" : "tilt for color",
   "dependencies" : {
     "express" : "*",
-    "socket.io" : "*"
+    "engine.io" : "*",
+    "jade" : "*"
   }
 }
