@@ -2,3 +2,5 @@ node_modules
 build
 components
 npm-debug.log
+pids
+logs
