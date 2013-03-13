@@ -3,7 +3,7 @@
  */
 
 var EIO = require('engine.io'),
-    socket = new EIO.Socket('192.168.2.103:9000');
+    socket = new EIO.Socket();
 
 /**
  * Get device tilt
