@@ -4,7 +4,7 @@ all:
 	@component build
 
 start:
-	@node app.js 9000
+	@node app.js 9200
 
 clean:
 	rm -rf build components node_modules
