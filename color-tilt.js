@@ -2,8 +2,13 @@
  * Module Dependencies
  */
 
-var EIO = require('engine.io'),
-    socket = new EIO.Socket();
+var IO = require('io');
+
+/**
+ * Initialize the socket
+ */
+
+socket = IO('http://ws.mat.io:80/color-tilt');
 
 /**
  * Get device tilt
@@ -18,20 +23,19 @@ window.ondevicemotion = function(e) {
 
   document.body.style.backgroundColor = rgb(x, y, z);
 
-  socket.send(JSON.stringify({
+  socket.emit('tilt', {
     x : x,
     y : y,
     z : z
-  }));
+  });
 };
 
 /**
  * On acceleration from another device
  */
 
-socket.on('message', function(message) {
-  message = JSON.parse(message)
-  document.body.style.backgroundColor = rgb(message.x, message.y, message.z);
+socket.on('tilt', function(tilt) {
+  document.body.style.backgroundColor = rgb(tilt.x, tilt.y, tilt.z);
 });
 
 

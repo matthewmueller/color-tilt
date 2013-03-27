@@ -6,6 +6,6 @@
   "scripts" : [ "color-tilt.js" ],
   "styles" : [ "color-tilt.css" ],
   "dependencies" : {
-    "learnboost/engine.io-client" : "*"
+    "matthewmueller/io" : "*"
   }
 }
