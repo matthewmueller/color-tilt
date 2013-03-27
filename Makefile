@@ -1,5 +1,4 @@
 all:
-	@npm install
 	@component install
 	@component build
 
